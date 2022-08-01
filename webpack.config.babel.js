@@ -1,4 +1,5 @@
 import path from 'path';
+import ESLintPlugin from 'eslint-webpack-plugin';
 
 const resolve = (file) => path.resolve(__dirname, file);
 const isProd = process.argv.indexOf('-p') !== -1;
@@ -7,6 +8,8 @@ const config = {
   mode: isProd ? 'production' : 'development',
 
   entry: resolve('src/index.js'),
+
+  plugins: [new ESLintPlugin({})],
 
   output: {
     path: resolve('dist'),
@@ -28,12 +31,6 @@ const config = {
 
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        enforce: 'pre',
-        use: 'eslint-loader',
-        exclude: /node_modules/,
-      },
       {
         test: /\.js$/,
         use: {
