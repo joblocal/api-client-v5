@@ -1,8 +1,8 @@
 # Joblocal Api-Client
 
-![Downloads](https://img.shields.io/npm/dt/@joblocal\/api-client.svg)
-![Size](https://img.shields.io/bundlephobia/min/@joblocal\/api-client.svg)
-![Zipped Size](https://img.shields.io/bundlephobia/minzip/@joblocal\/api-client.svg)
+![Downloads](https://img.shields.io/npm/dt/@joblocal\/api-client-v5.svg)
+![Size](https://img.shields.io/bundlephobia/min/@joblocal\/api-client-v5.svg)
+![Zipped Size](https://img.shields.io/bundlephobia/minzip/@joblocal\/api-client-v5.svg)
 
 This package contains a pre-configured devour-client for the Joblocal api
 [Devour](https://github.com/twg/devour) - Api client for JSON-Api-Specification compliant resource handling
