@@ -26,7 +26,7 @@ $ yarn add @joblocal/api-client-v5
 After installing the package you can use it as follows.
 
 ```javascript
-import createClient from '@joblocal/api-client';
+import createClient from '@joblocal/api-client-v5';
 
 const client = createClient({
   url: 'https://api.joblocal.de/v5',
