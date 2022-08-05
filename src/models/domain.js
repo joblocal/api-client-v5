@@ -20,6 +20,6 @@ export default {
     hide_result_count: false,
     use_extra_boost: false,
     use_demonstration_page: false,
-    self_register_has_new_jobmanagement: false
+    self_register_has_new_jobmanagement: false,
   },
 };
