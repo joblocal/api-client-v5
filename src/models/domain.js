@@ -21,5 +21,9 @@ export default {
     use_extra_boost: false,
     use_demonstration_page: false,
     self_register_has_new_jobmanagement: false,
+    client: {
+      jsonApi: 'hasOne',
+      type: 'client',
+    },
   },
 };
