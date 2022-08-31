@@ -15,5 +15,6 @@ export default {
     city: '',
     zipcode: '',
     country: '',
+    image_url: '',
   },
 };
