@@ -1,6 +1,7 @@
 export default {
   name: 'contact',
   attributes: {
+    salutation: null,
     title: null,
     firstname: null,
     lastname: null,
