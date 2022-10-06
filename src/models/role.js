@@ -2,7 +2,7 @@ export default {
   name: 'role',
   attributes: {
     name: '',
-    'permissions': {
+    permissions: {
       jsonApi: 'hasMany',
       type: 'permission',
     },
