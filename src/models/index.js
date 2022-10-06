@@ -6,6 +6,8 @@ import industryModel from './industry';
 import socialMediaLinkModel from './social-media-link';
 import subscriptionModel from './subscription';
 import clientModel from './client';
+import role from './role';
+import permission from './permission';
 
 export default [
   benefitModel,
@@ -16,4 +18,6 @@ export default [
   socialMediaLinkModel,
   subscriptionModel,
   clientModel,
+  role,
+  permission,
 ];

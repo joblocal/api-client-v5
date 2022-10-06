@@ -21,6 +21,7 @@ export default function createClient({
   models.forEach((model) => client.define(
     model.name,
     model.attributes,
+    model.options,
   ));
 
   return client;
