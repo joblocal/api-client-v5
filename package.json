@@ -6,7 +6,8 @@
     "dist",
     "src"
   ],
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
+  "module": "./src/index.js",
   "scripts": {
     "prebuild": "rm -rf dist && npm run validate",
     "build": "webpack",
