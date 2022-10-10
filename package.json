@@ -1,12 +1,13 @@
 {
   "name": "@joblocal/api-client-v5",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "This repository provides an api-client to use the version 5 joblocal api.",
   "files": [
     "dist",
     "src"
   ],
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
+  "module": "./src/index.js",
   "scripts": {
     "prebuild": "rm -rf dist && npm run validate",
     "build": "webpack",
