@@ -16,6 +16,9 @@ export default {
     city: '',
     zipcode: '',
     country: '',
-    image_url: '',
+    media: {
+      jsonApi: 'hasOne',
+      type: 'media',
+    },
   },
 };
