@@ -3,6 +3,7 @@ import companyModel from './company';
 import contactModel from './contact';
 import domainModel from './domain';
 import industryModel from './industry';
+import mediaModel from './media';
 import socialMediaLinkModel from './social-media-link';
 import subscriptionModel from './subscription';
 import clientModel from './client';
@@ -15,6 +16,7 @@ export default [
   contactModel,
   domainModel,
   industryModel,
+  mediaModel,
   socialMediaLinkModel,
   subscriptionModel,
   clientModel,
