@@ -16,6 +16,10 @@ export default {
     city: '',
     zipcode: '',
     country: '',
+    company: {
+      jsonApi: 'hasOne',
+      type: 'company',
+    },
     media: {
       jsonApi: 'hasOne',
       type: 'media',
