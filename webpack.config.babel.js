@@ -13,7 +13,7 @@ const config = {
     path: resolve('dist'),
     filename: 'index.js',
     library: {
-      name: 'api-client',
+      name: 'api-client-v5',
       type: 'umd',
     },
     globalObject: 'this',
