@@ -10,7 +10,8 @@
   "module": "./src/index.js",
   "scripts": {
     "prebuild": "rm -rf dist && npm run validate",
-    "build": "webpack",
+    "build": "webpack --mode production",
+    "build:development": "webpack --mode development",
     "test": "jest src",
     "test:watch": "npm test -- --watch --onlyChanged",
     "test:coverage": "npm test -- --coverage",

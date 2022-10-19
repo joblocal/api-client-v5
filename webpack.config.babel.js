@@ -2,10 +2,8 @@ import path from 'path';
 import ESLintPlugin from 'eslint-webpack-plugin';
 
 const resolve = (file) => path.resolve(__dirname, file);
-const isProd = process.argv.indexOf('-p') !== -1;
 
 const config = {
-  mode: isProd ? 'production' : 'development',
 
   entry: resolve('src/index.js'),
 
@@ -14,8 +12,11 @@ const config = {
   output: {
     path: resolve('dist'),
     filename: 'index.js',
-    library: 'api-client',
-    libraryTarget: 'commonjs2',
+    library: {
+      name: 'api-client',
+      type: 'umd',
+    },
+    globalObject: 'this',
   },
 
   externals: {
