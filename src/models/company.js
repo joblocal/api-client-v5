@@ -1,6 +1,8 @@
 export default {
   name: 'company',
   attributes: {
+    legal_name: '',
+    domain_id: '',
     name: '',
     description: '',
     publication_count: 0,
@@ -33,29 +35,34 @@ export default {
     employees: 0,
     company_is_public: true,
     use_new_jobmanagement: false,
-    contacts: {
+    create_time: '',
+    'active-flatrates': {
       jsonApi: 'hasMany',
-      type: 'contact',
-    },
-    'main-contact': {
-      jsonApi: 'hasOne',
-      type: 'contact',
-    },
-    industry: {
-      jsonApi: 'hasOne',
-      type: 'industry',
+      type: 'active-flatrate',
     },
     benefits: {
       jsonApi: 'hasMany',
       type: 'benefit',
     },
-    subscriptions: {
-      jsonApi: 'hasMany',
-      type: 'subscription',
-    },
     'child-companies': {
       jsonApi: 'hasMany',
       type: 'company',
+    },
+    contacts: {
+      jsonApi: 'hasMany',
+      type: 'contact',
+    },
+    domains: {
+      jsonApi: 'hasMany',
+      type: 'domain',
+    },
+    industry: {
+      jsonApi: 'hasOne',
+      type: 'industry',
+    },
+    'main-contact': {
+      jsonApi: 'hasOne',
+      type: 'contact',
     },
     'parent-company': {
       jsonApi: 'hasOne',
@@ -68,6 +75,10 @@ export default {
     'social-media-links': {
       jsonApi: 'hasMany',
       type: 'social-media-link',
+    },
+    subscriptions: {
+      jsonApi: 'hasMany',
+      type: 'subscription',
     },
   },
 };
