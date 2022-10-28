@@ -11,11 +11,11 @@ export default {
     email: null,
     phone: null,
     mobile: null,
-    show_in_company_profile: false,
     street: '',
     city: '',
     zipcode: '',
     country: '',
+    show_in_company_profile: false,
     company: {
       jsonApi: 'hasOne',
       type: 'company',
