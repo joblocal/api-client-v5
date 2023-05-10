@@ -4,7 +4,10 @@ export default {
     name: '',
     activate_time: '',
     expire_time: '',
-    domain: '',
     sort_number: null,
+    domain: {
+      jsonApi: 'hasOne',
+      type: 'domain',
+    },
   },
 };
