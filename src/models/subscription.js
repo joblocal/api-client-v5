@@ -5,9 +5,5 @@ export default {
     activate_time: '',
     expire_time: '',
     sort_number: null,
-    domain: {
-      jsonApi: 'hasOne',
-      type: 'domain',
-    },
   },
 };
