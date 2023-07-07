@@ -13,7 +13,7 @@ export default {
     link_title: '',
     file: '',
     header_uuid: '',
-    meta_description: {},
+    meta_description: '',
     'related-landingpages': {
       jsonApi: 'hasMany',
       type: 'region-landingpage',
