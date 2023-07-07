@@ -12,7 +12,8 @@ export default {
     is_in_footer: false,
     link_title: '',
     file: '',
-    meta: {},
+    header_uuid: '',
+    meta_description: '',
     'related-landingpages': {
       jsonApi: 'hasMany',
       type: 'region-landingpage',
