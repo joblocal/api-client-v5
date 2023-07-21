@@ -11,7 +11,7 @@ export default {
     content: '',
     is_in_footer: false,
     link_title: '',
-    file: '',
+    header_url: '',
     header_uuid: '',
     meta_description: '',
     'related-landingpages': {
