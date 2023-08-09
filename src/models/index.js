@@ -13,6 +13,7 @@ import roleModel from './role';
 import searchLandingpageModel from './search-landingpage';
 import socialMediaLinkModel from './social-media-link';
 import subscriptionModel from './subscription';
+import userModel from './user';
 
 export default [
   activeFlatrateModel,
@@ -30,4 +31,5 @@ export default [
   searchLandingpageModel,
   socialMediaLinkModel,
   subscriptionModel,
+  userModel,
 ];
