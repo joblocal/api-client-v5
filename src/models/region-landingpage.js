@@ -1,6 +1,7 @@
 export default {
   name: 'region-landingpage',
   attributes: {
+    active: false,
     domain_id: '',
     page_title: '',
     slug: '',
