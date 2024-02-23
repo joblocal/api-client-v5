@@ -2,6 +2,7 @@ import DevourClient from 'devour-client';
 
 import models from '../models';
 
+import errorMiddleware from '../middlewares/errors';
 import awsApiGatewayMiddleware from '../middlewares/awsApiGateway';
 import tokenAuthenticationMiddleware from '../middlewares/tokenAuthentication';
 
@@ -17,6 +18,7 @@ export default function createClient({
 
   client.insertMiddlewareBefore('axios-request', awsApiGatewayMiddleware);
   client.insertMiddlewareBefore('axios-request', tokenAuthenticationMiddleware({ token }));
+  client.replaceMiddleware('errors', errorMiddleware);
 
   models.forEach((model) => client.define(
     model.name,
